@@ -3,7 +3,8 @@
 	import '../app.css';
 </script>
 
-<Header />
+<!-- TODO find a way to hide dynamic -->
+<!-- <Header /> -->
 
 <main>
 	<slot />
