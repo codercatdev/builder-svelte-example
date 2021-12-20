@@ -1,4 +1,5 @@
 <script context="module">
+	export const router = false;
 	export async function load({ page }) {
 		console.log('Fetching', page);
 		const res = await fetch(
@@ -39,5 +40,5 @@
 	<script async src="https://cdn.builder.io/js/webcomponents"></script>
 </svelte:head>
 
-<svelte:component this={BuilderPage} />
+<svelte:component this={BuilderPage} entry={builder?.id} />
 <svelte:component this={AboutPage} />
